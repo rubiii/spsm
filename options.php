@@ -20,7 +20,7 @@ function optionsframework_option_name() {
  * Defines an array of options that will be used to generate the settings page and be saved in the database.
  * When creating the 'id' fields, make sure to use all lowercase and no spaces.
  *
- * If you are making your theme translatable, you should replace 'html5reset'
+ * If you are making your theme translatable, you should replace 'spsm'
  * with the actual text domain for your theme.  Read more:
  * http://codex.wordpress.org/Function_Reference/load_theme_textdomain
  */
@@ -33,7 +33,7 @@ function optionsframework_options() {
 	foreach ($options_categories_obj as $category) {
 		$options_categories[$category->cat_ID] = $category->cat_name;
 	}
-	
+
 	// Pull all tags into an array
 	$options_tags = array();
 	$options_tags_obj = get_tags();
@@ -52,121 +52,121 @@ function optionsframework_options() {
 	$options = array();
 
 	$options[] = array(
-		'name' => __('Header Meta', 'html5reset'),
+		'name' => __('Header Meta', 'spsm'),
 		'type' => 'heading');
 
 // Standard Meta
 	$options[] = array(
-		'name' => __('Head ID', 'html5reset'),
-		'desc' => __("", 'html5reset'),
+		'name' => __('Head ID', 'spsm'),
+		'desc' => __("", 'spsm'),
 		'id' => 'meta_headid',
 		'std' => 'www-sitename-com',
 		'type' => 'text');
 	$options[] = array(
-		'name' => __('Google Webmasters', 'html5reset'),
-		'desc' => __("Speaking of Google, don't forget to set your site up: <a href='http://google.com/webmasters' target='_blank'>http://google.com/webmasters</a>", 'html5reset'),
+		'name' => __('Google Webmasters', 'spsm'),
+		'desc' => __("Speaking of Google, don't forget to set your site up: <a href='http://google.com/webmasters' target='_blank'>http://google.com/webmasters</a>", 'spsm'),
 		'id' => 'meta_google',
 		'std' => '',
 		'type' => 'text');
 	$options[] = array(
-		'name' => __('Author Name', 'html5reset'),
-		'desc' => __('Populates meta author tag.', 'html5reset'),
+		'name' => __('Author Name', 'spsm'),
+		'desc' => __('Populates meta author tag.', 'spsm'),
 		'id' => 'meta_author',
 		'std' => '',
 		'type' => 'text');
 	$options[] = array(
-		'name' => __('Mobile Viewport', 'html5reset'),
-		'desc' => __('Uncomment to use; use thoughtfully!', 'html5reset'),
+		'name' => __('Mobile Viewport', 'spsm'),
+		'desc' => __('Uncomment to use; use thoughtfully!', 'spsm'),
 		'id' => 'meta_viewport',
 		'std' => 'width=device-width, initial-scale=1.0',
 		'type' => 'text');
 
 // Icons
 	$options[] = array(
-		'name' => __('Site Favicon', 'html5reset'),
-		'desc' => __('', 'html5reset'),
+		'name' => __('Site Favicon', 'spsm'),
+		'desc' => __('', 'spsm'),
 		'id' => 'head_favicon',
 		'type' => 'upload');
 	$options[] = array(
-		'name' => __('Apple Touch Icon', 'html5reset'),
-		'desc' => __('', 'html5reset'),
+		'name' => __('Apple Touch Icon', 'spsm'),
+		'desc' => __('', 'spsm'),
 		'id' => 'head_apple_touch_icon',
 		'type' => 'upload');
 
 // App: Windows 8
 	$options[] = array(
-		'name' => __('App: Windows 8', 'html5reset'),
-		'desc' => __('Application Name', 'html5reset'),
+		'name' => __('App: Windows 8', 'spsm'),
+		'desc' => __('Application Name', 'spsm'),
 		'id' => 'meta_app_win_name',
 		'std' => '',
 		'type' => 'text');
 	$options[] = array(
-		'name' => __('', 'html5reset'),
-		'desc' => __('Tile Color', 'html5reset'),
+		'name' => __('', 'spsm'),
+		'desc' => __('Tile Color', 'spsm'),
 		'id' => 'meta_app_win_color',
 		'std' => '',
 		'type' => 'color');
 	$options[] = array(
-		'name' => __('', 'html5reset'),
-		'desc' => __('Tile Image', 'html5reset'),
+		'name' => __('', 'spsm'),
+		'desc' => __('Tile Image', 'spsm'),
 		'id' => 'meta_app_win_image',
 		'std' => '',
 		'type' => 'upload');
 
 // App: Twitter
 	$options[] = array(
-		'name' => __('App: Twitter Card', 'html5reset'),
-		'desc' => __('twitter:card (summary, photo, gallery, product, app, player)', 'html5reset'),
+		'name' => __('App: Twitter Card', 'spsm'),
+		'desc' => __('twitter:card (summary, photo, gallery, product, app, player)', 'spsm'),
 		'id' => 'meta_app_twt_card',
 		'std' => '',
 		'type' => 'text');
 	$options[] = array(
-		'name' => __('', 'html5reset'),
-		'desc' => __('twitter:site (@username of website)', 'html5reset'),
+		'name' => __('', 'spsm'),
+		'desc' => __('twitter:site (@username of website)', 'spsm'),
 		'id' => 'meta_app_twt_site',
 		'std' => '',
 		'type' => 'text');
 	$options[] = array(
-		'name' => __('', 'html5reset'),
-		'desc' => __("twitter:title (the user's Twitter ID)", 'html5reset'),
+		'name' => __('', 'spsm'),
+		'desc' => __("twitter:title (the user's Twitter ID)", 'spsm'),
 		'id' => 'meta_app_twt_title',
 		'std' => '',
 		'type' => 'text');
 	$options[] = array(
-		'name' => __('', 'html5reset'),
-		'desc' => __('twitter:description (maximum 200 characters)', 'html5reset'),
+		'name' => __('', 'spsm'),
+		'desc' => __('twitter:description (maximum 200 characters)', 'spsm'),
 		'id' => 'meta_app_twt_description',
 		'std' => '',
 		'type' => 'textarea');
 	$options[] = array(
-		'name' => __('', 'html5reset'),
-		'desc' => __('twitter:url (url for the content)', 'html5reset'),
+		'name' => __('', 'spsm'),
+		'desc' => __('twitter:url (url for the content)', 'spsm'),
 		'id' => 'meta_app_twt_url',
 		'std' => '',
 		'type' => 'text');
 
 // App: Facebook
 	$options[] = array(
-		'name' => __('App: Facebook', 'html5reset'),
-		'desc' => __('og:title', 'html5reset'),
+		'name' => __('App: Facebook', 'spsm'),
+		'desc' => __('og:title', 'spsm'),
 		'id' => 'meta_app_fb_title',
 		'std' => '',
 		'type' => 'text');
 	$options[] = array(
-		'name' => __('', 'html5reset'),
-		'desc' => __('og:description', 'html5reset'),
+		'name' => __('', 'spsm'),
+		'desc' => __('og:description', 'spsm'),
 		'id' => 'meta_app_fb_description',
 		'std' => '',
 		'type' => 'textarea');
 	$options[] = array(
-		'name' => __('', 'html5reset'),
-		'desc' => __('og:url', 'html5reset'),
+		'name' => __('', 'spsm'),
+		'desc' => __('og:url', 'spsm'),
 		'id' => 'meta_app_fb_url',
 		'std' => '',
 		'type' => 'text');
 	$options[] = array(
-		'name' => __('', 'html5reset'),
-		'desc' => __('og:image', 'html5reset'),
+		'name' => __('', 'spsm'),
+		'desc' => __('og:image', 'spsm'),
 		'id' => 'meta_app_fb_image',
 		'std' => '',
 		'type' => 'upload');

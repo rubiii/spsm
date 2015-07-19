@@ -21,7 +21,7 @@ msgstr ""
 "X-Textdomain-Support: yes"
 
 #: 404.php:9
-#@ html5reset
+#@ spsm
 msgid "Error 404 - Page Not Found"
 msgstr "404 Fout - Pagina niet gevonden"
 
@@ -194,134 +194,134 @@ msgid "Bold Italic"
 msgstr ""
 
 #: archive.php:14
-#@ html5reset
+#@ spsm
 msgid "Archive for the"
 msgstr "Archief voor"
 
 #: archive.php:14
-#@ html5reset
+#@ spsm
 msgid "Category"
 msgstr "Categorie"
 
 #: archive.php:17
-#@ html5reset
+#@ spsm
 msgid "Posts Tagged"
 msgstr "Berichte getagged"
 
 #: archive.php:20
 #: archive.php:23
 #: archive.php:26
-#@ html5reset
+#@ spsm
 msgid "Archive for"
 msgstr "Archief voor"
 
 #: archive.php:29
-#@ html5reset
+#@ spsm
 msgid "Author Archive"
 msgstr "Auteurs archief"
 
 #: archive.php:32
-#@ html5reset
+#@ spsm
 msgid "Blog Archives"
 msgstr "Blog archief"
 
 #: archive.php:58
 #: index.php:35
 #: search.php:37
-#@ html5reset
+#@ spsm
 msgid "Nothing Found"
 msgstr "Niets gevonden"
 
 #: comments.php:7
-#@ html5reset
+#@ spsm
 msgid "This post is password protected. Enter the password to view comments."
 msgstr "Dit bericht is beveiligd met een wachtwoord. Voer het wachtwoord in om de reacties te bekijken."
 
 #: comments.php:15
-#@ html5reset
+#@ spsm
 msgid "No Responses"
 msgstr "Geen reacties"
 
 #: comments.php:15
-#@ html5reset
+#@ spsm
 msgid "One Response"
 msgstr "Één reactie"
 
 #: comments.php:15
-#@ html5reset
+#@ spsm
 msgid "% Responses"
 msgstr "% Reacties"
 
 #: comments.php:37
-#@ html5reset
+#@ spsm
 msgid "Comments are closed."
 msgstr "Reageren is uitgeschakeld."
 
 #: comments.php:47
 #, php-format
-#@ html5reset
+#@ spsm
 msgid "Leave a Reply to %s"
 msgstr "Reageer op %s"
 
 #: comments.php:54
-#@ html5reset
+#@ spsm
 msgid "You must be"
 msgstr "Om te kunnen reageren moet u"
 
 #: comments.php:54
-#@ html5reset
+#@ spsm
 msgid "logged in"
 msgstr "ingelogd zijn"
 
 #: comments.php:54
-#@ html5reset
+#@ spsm
 msgid "to post a comment."
 msgstr "."
 
 #: comments.php:61
-#@ html5reset
+#@ spsm
 msgid "Logged in as"
 msgstr "Ingelogd als"
 
 #: comments.php:61
-#@ html5reset
+#@ spsm
 msgid "Log out"
 msgstr "Uitloggen"
 
 #: comments.php:67
-#@ html5reset
+#@ spsm
 msgid "Name"
 msgstr "Naam"
 
 #: comments.php:72
-#@ html5reset
+#@ spsm
 msgid "Mail (will not be published)"
 msgstr "E-mail (zal niet worden getoond)"
 
 #: comments.php:77
-#@ html5reset
+#@ spsm
 msgid "Website"
 msgstr "Website"
 
 #: comments.php:89
-#@ html5reset
+#@ spsm
 msgid "Submit Comment"
 msgstr "Plaats reactie"
 
 #: functions.php:20
 #: functions.php:114
-#@ html5reset
+#@ spsm
 msgid "Navigation Menu"
 msgstr "Navigatie menu"
 
 #: functions.php:65
 #, php-format
-#@ html5reset
+#@ spsm
 msgid "Page %s"
 msgstr "Pagina %s"
 
 #: functions.php:120
-#@ html5reset
+#@ spsm
 msgid "Sidebar Widgets"
 msgstr "Zijbalk widgets"
 
@@ -332,219 +332,219 @@ msgstr ""
 
 #: index.php:22
 #: single.php:21
-#@ html5reset
+#@ spsm
 msgid "Tags: "
 msgstr "Tags:"
 
 #: index.php:23
-#@ html5reset
+#@ spsm
 msgid "Posted in"
 msgstr "Geplaatst in"
 
 #: index.php:24
-#@ html5reset
+#@ spsm
 msgid "No Comments &#187;"
 msgstr "Geen reacties &#187;"
 
 #: index.php:24
-#@ html5reset
+#@ spsm
 msgid "1 Comment &#187;"
 msgstr "1 reactie &#187;"
 
 #: index.php:24
-#@ html5reset
+#@ spsm
 msgid "% Comments &#187;"
 msgstr "% reacties &#187;"
 
 #: options.php:55
-#@ html5reset
+#@ spsm
 msgid "Header Meta"
 msgstr ""
 
 #: options.php:60
-#@ html5reset
+#@ spsm
 msgid "Head ID"
 msgstr ""
 
 #: options.php:66
-#@ html5reset
+#@ spsm
 msgid "Google Webmasters"
 msgstr ""
 
 #: options.php:67
-#@ html5reset
+#@ spsm
 msgid "Speaking of Google, don't forget to set your site up: <a href='http://google.com/webmasters' target='_blank'>http://google.com/webmasters</a>"
 msgstr "Over Google gesproken, vergeet je site niet in te stellen op: <a href='http://google.com/webmasters' target='_blank'>http://google.com/webmasters</a>"
 
 #: options.php:72
-#@ html5reset
+#@ spsm
 msgid "Author Name"
 msgstr "Naam auteur"
 
 #: options.php:73
-#@ html5reset
+#@ spsm
 msgid "Populates meta author tag."
 msgstr "Vul meta auteur tag."
 
 #: options.php:78
-#@ html5reset
+#@ spsm
 msgid "Mobile Viewport"
 msgstr "Viewport voor mobiel"
 
 #: options.php:79
-#@ html5reset
+#@ spsm
 msgid "Uncomment to use; use thoughtfully!"
 msgstr "Verwijder het commentaar om te gebruiken; doe dit niet zonder na te denken!"
 
 #: options.php:86
-#@ html5reset
+#@ spsm
 msgid "Site Favicon"
 msgstr "Website favicon"
 
 #: options.php:91
-#@ html5reset
+#@ spsm
 msgid "Apple Touch Icon"
 msgstr "Apple Touch afbeelding"
 
 #: options.php:98
-#@ html5reset
+#@ spsm
 msgid "App: Windows 8"
 msgstr ""
 
 #: options.php:99
-#@ html5reset
+#@ spsm
 msgid "Application Name"
 msgstr "Applicatie naam"
 
 #: options.php:105
-#@ html5reset
+#@ spsm
 msgid "Tile Color"
 msgstr "Tile kleur"
 
 #: options.php:111
-#@ html5reset
+#@ spsm
 msgid "Tile Image"
 msgstr "Tile afbeelding"
 
 #: options.php:118
-#@ html5reset
+#@ spsm
 msgid "App: Twitter Card"
 msgstr ""
 
 #: options.php:119
-#@ html5reset
+#@ spsm
 msgid "twitter:card (summary, photo, gallery, product, app, player)"
 msgstr "twitter:card (samenvatting, foto, galerij, produkt, app, player)"
 
 #: options.php:125
-#@ html5reset
+#@ spsm
 msgid "twitter:site (@username of website)"
 msgstr "twitter:site (@gebruikersnaam van website)"
 
 #: options.php:131
-#@ html5reset
+#@ spsm
 msgid "twitter:title (the user's Twitter ID)"
 msgstr "twitter:title (Twitter ID van gebruiker)"
 
 #: options.php:137
-#@ html5reset
+#@ spsm
 msgid "twitter:description (maximum 200 characters)"
 msgstr "twitter:description (omschrijving, maximum 200 karakters)"
 
 #: options.php:143
-#@ html5reset
+#@ spsm
 msgid "twitter:url (url for the content)"
 msgstr "twitter:url (URL naar de inhoud)"
 
 #: options.php:150
-#@ html5reset
+#@ spsm
 msgid "App: Facebook"
 msgstr ""
 
 #: options.php:151
-#@ html5reset
+#@ spsm
 msgid "og:title"
 msgstr ""
 
 #: options.php:157
-#@ html5reset
+#@ spsm
 msgid "og:description"
 msgstr ""
 
 #: options.php:163
-#@ html5reset
+#@ spsm
 msgid "og:url"
 msgstr ""
 
 #: options.php:169
-#@ html5reset
+#@ spsm
 msgid "og:image"
 msgstr ""
 
 #: page.php:21
 #: single.php:19
-#@ html5reset
+#@ spsm
 msgid "Pages: "
 msgstr "Pagina's: "
 
 #: search.php:11
-#@ html5reset
+#@ spsm
 msgid "Search Results"
 msgstr "Zoek resultaten"
 
 #: searchform.php:3
-#@ html5reset
+#@ spsm
 msgid "Search for:"
 msgstr "Zoeken naar:"
 
 #: searchform.php:6
-#@ html5reset
+#@ spsm
 msgid "Search"
 msgstr "Zoeken"
 
 #: sidebar.php:16
-#@ html5reset
+#@ spsm
 msgid "Archives"
 msgstr "Archieven"
 
 #: sidebar.php:21
-#@ html5reset
+#@ spsm
 msgid "Meta"
 msgstr ""
 
 #: sidebar.php:25
-#@ html5reset
+#@ spsm
 msgid "Powered by WordPress, state-of-the-art semantic personal publishing platform."
 msgstr "Mogelijk gemaakt door WordPress, een modern semantisch persoonlijk publicatie platform."
 
 #: sidebar.php:25
-#@ html5reset
+#@ spsm
 msgid "WordPress"
 msgstr ""
 
 #: sidebar.php:29
-#@ html5reset
+#@ spsm
 msgid "Subscribe"
 msgstr "Inschrijven"
 
 #: sidebar.php:31
-#@ html5reset
+#@ spsm
 msgid "Entries (RSS)"
 msgstr "Toevoegingen (RSS)"
 
 #: sidebar.php:32
-#@ html5reset
+#@ spsm
 msgid "Comments (RSS)"
 msgstr "Reacties (RSS)"
 
 #: page.php:25
 #: single.php:27
-#@ html5reset
+#@ spsm
 msgid "Edit this entry"
 msgstr "Bewerk dit item"
 
 #: comments.php:47
-#@ html5reset
+#@ spsm
 msgid "Leave a Reply"
 msgstr "Reageer"
 

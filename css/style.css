@@ -1,0 +1,263 @@
+/*
+Theme Name: St. Pauli selber machen
+Theme URI: http://st-pauli-selber-machen.de
+Description: A theme for St. Pauli selber machen
+Author: St. Pauli selber machen
+Author URI: http://st-pauli-selber-machen.de
+Version: 1.0
+*/
+
+html, body {
+  height: 100%;
+}
+
+body {
+	font: 14px/22px "Open Sans", Helmet, Freesans, sans-serif;
+  background-color: #e10000;
+  background-image: url(../../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-y: scroll;
+}
+
+body, select, input, textarea { color: #333; }
+
+/* Custom text-selection colors (remove any text shadows: http://twitter.com/miketaylr/status/12228805301) */
+/*::-moz-selection{background: #fcd700; color: #fff; text-shadow: none;}*/
+/*::selection {background: #fcd700; color: #fff; text-shadow: none;}*/
+/*	j.mp/webkit-tap-highlight-color */
+/*a:link {-webkit-tap-highlight-color: #fcd700;}*/
+
+/* Mozilla dosen't style place holders by default */
+input:-moz-placeholder { color:#a9a9a9; }
+textarea:-moz-placeholder { color:#a9a9a9; }
+
+strong em {
+	font-weight: 700;
+}
+
+#wrapper {
+	display: table;
+}
+
+#header {
+	display: table-cell;
+  vertical-align: top;
+	width: 280px;
+	min-width: 280px;
+	padding: 60px 0;
+}
+
+#header .header-social {
+	text-align: center;
+}
+
+#header .header-social a {
+	color: #fff;
+}
+#header .header-social a:hover {
+	color: #fff;
+}
+
+#logo {
+	display: block;
+	margin: 0 auto;
+}
+
+#nav {
+	width: 220px;
+	margin: 65px auto 30px auto;
+	padding: 30px 10px;
+	border: 1px solid #fff;
+	border-left: 0;
+	border-right: 0;
+}
+#nav .menu {
+	list-style: none;
+}
+#nav .menu li {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: .03em;
+	text-align: center;
+	margin-top: 12px;
+}
+#nav .menu li:first-child {
+	margin-top: 0;
+}
+#nav .menu li a {
+	color: #fff;
+	text-decoration: none;
+}
+#nav .menu li a:hover {
+	text-decoration: underline;
+}
+#nav .sub-menu {
+	display: none;
+}
+
+#stage {
+	display: table-cell;
+  vertical-align: top;
+	background: #fff;
+  min-width: 380px;
+	max-width: 760px;
+	min-height: 100%;
+	padding: 60px;
+
+	border: 10px solid rgba(255, 255, 255, .3);
+	border-top: 0;
+	border-bottom: 0;
+
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  background-clip: padding-box;
+}
+
+#stage b {
+	font-weight: bold;
+}
+#stage a {
+	color: #ef8800;
+}
+#stage a:hover {
+	text-decoration: none;
+}
+
+#stage h1 {
+	font-family: "Open Sans", sans-serif;
+	font-size: 26px;
+	line-height: 30px;
+	text-transform: uppercase;
+	padding-bottom: 5px;
+}
+
+#stage h2 {
+	font-family: "Open Sans", sans-serif;
+	font-size: 26px;
+	line-height: 30px;
+	text-transform: uppercase;
+	padding-bottom: 5px;
+}
+#stage h2 a {
+	color: #333;
+	text-decoration: none;
+}
+#stage h2 a:hover {
+	color: #ef8800;
+	text-decoration: none;
+}
+
+#stage h3 {
+	font-family: "Open Sans", sans-serif;
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding-top: 25px;
+	margin-bottom: 25px;
+}
+
+#stage article {
+	margin-bottom: 60px;
+}
+#stage article header {
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 25px;
+	margin-bottom: 25px;
+}
+#stage article header .entry-meta {
+	font-style: italic;
+}
+
+#stage article .entry-content .entry-link {
+	font-style: italic;
+}
+
+#stage article p,
+#stage article ul,
+#stage article ol {
+	margin-bottom: 25px;
+}
+#stage article ul {
+	list-style: disc outside none;
+}
+
+#stage article img {
+	border: 10px solid #f9f9f9;
+}
+
+#sidebar {
+	display: table-cell;
+  vertical-align: top;
+  font-size: 12px;
+  line-height: 20px;
+	padding: 38px 40px 50px 20px;
+	width: 320px;
+}
+
+#sidebar b {
+	font-weight: bold;
+}
+#sidebar a {
+	color: #ef8800;
+}
+#sidebar a:hover {
+	text-decoration: none;
+}
+
+#sidebar h3 {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 15px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #aaa;
+	margin-bottom: 10px;
+}
+
+#sidebar .widget {
+	background: #fff;
+	padding: 20px;
+	border: 10px solid rgba(255, 255, 255, .3);
+	border-top: 0;
+
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  background-clip: padding-box;
+}
+#sidebar .widget:first-child {
+	border-top: 10px solid rgba(255, 255, 255, .3);
+}
+
+input, textarea {
+	font: 14px/22px "Open Sans", Helmet, Freesans, sans-serif;
+	border: 1px solid #ccc;
+	margin: 5px 5px 5px 0;
+}
+input {
+	width: 300px;
+	padding: 7px 12px;
+}
+input[type="submit"] {
+	background: #e80000;
+	color: #fff;
+	width: auto;
+}
+textarea {
+  width: 600px;
+  height: 300px;
+  padding: 10px 12px;
+}
+label {
+	font-size: 12px;
+	line-height: 20px;
+}
+
+nav.pagination {
+	border-top: 1px solid #ccc;
+	padding: 20px 0 10px;
+	margin-top: 70px;
+}

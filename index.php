@@ -1,41 +1,46 @@
 <?php
 /**
  * @package WordPress
- * @subpackage HTML5-Reset-WordPress-Theme
- * @since HTML5 Reset 2.0
+ * @subpackage SPsm-Theme
  */
- get_header(); ?>
 
-	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+	get_header(); ?>
 
-		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
+	<?php if ( have_posts() ) : ?>
 
-			<h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+		<?php if ( is_home() && ! is_front_page() ) : ?>
+			<header>
+				<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+			</header>
+		<?php endif; ?>
 
-			<?php posted_on(); ?>
+		<?php
+		// Start the loop.
+		while ( have_posts() ) : the_post();
 
-			<div class="entry">
-				<?php the_content(); ?>
-			</div>
+			/*
+			 * Include the Post-Format-specific template for the content.
+			 * If you want to override this in a child theme, then include a file
+			 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+			 */
+			get_template_part( 'content', get_post_format() );
 
-			<footer class="postmetadata">
-				<?php the_tags(__('Tags: ','html5reset'), ', ', '<br />'); ?>
-				<?php _e('Posted in','html5reset'); ?> <?php the_category(', ') ?> | 
-				<?php comments_popup_link(__('No Comments &#187;','html5reset'), __('1 Comment &#187;','html5reset'), __('% Comments &#187;','html5reset')); ?>
-			</footer>
+		// End the loop.
+		endwhile;
 
-		</article>
+		// Previous/next page navigation.
+		the_posts_pagination( array(
+			'screen_reader_text' => ' ',
+			'prev_text'          => __( 'Zurück', 'spsm' ),
+			'next_text'          => __( 'Weiter', 'spsm' ),
+			'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Seite', 'spsm' ) . ' </span>',
+		) );
 
-	<?php endwhile; ?>
+	// If no content, include the "No posts found" template.
+	else :
+		get_template_part( 'content', 'none' );
 
-	<?php post_navigation(); ?>
-
-	<?php else : ?>
-
-		<h2><?php _e('Nothing Found','html5reset'); ?></h2>
-
-	<?php endif; ?>
-
-<?php get_sidebar(); ?>
+	endif;
+	?>
 
 <?php get_footer(); ?>
