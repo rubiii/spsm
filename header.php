@@ -15,6 +15,8 @@
 
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 
+  <meta name="viewport" content="width=device-width,user-scalable=0,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+
 	<meta name="title" content="<?php wp_title( '|', true, 'right' ); ?>">
 	<meta name="description" content="<?php bloginfo('description'); ?>">
 
@@ -42,9 +44,13 @@
 			?>
 
 			<div class="header-social">
-				<a href="https://www.facebook.com/pages/St-Pauli-selber-machen/1402128183433666"><i class="fa fa-2x fa-facebook-square" title="St. Pauli selber machen auf Facebook"></i></a>
+        <a href="https://www.facebook.com/pages/St-Pauli-selber-machen/1402128183433666">
+          <i class="fa fa-2x fa-facebook-square" title="St. Pauli selber machen auf Facebook"></i>
+        </a>
 				&nbsp;
-				<a href="https://twitter.com/StPselbermachen"><i class="fa fa-2x fa-twitter-square" title="St. Pauli selber machen auf Twitter"></i></a>
+        <a href="https://twitter.com/StPselbermachen">
+          <i class="fa fa-2x fa-twitter-square" title="St. Pauli selber machen auf Twitter"></i>
+        </a>
 			</div>
 		</div>
 

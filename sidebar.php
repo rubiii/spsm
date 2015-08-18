@@ -6,5 +6,7 @@
 ?>
 
 <div id="sidebar">
-	<?php dynamic_sidebar("sidebar-primary"); ?>
+  <div id="sidebar-wrapper">
+    <?php dynamic_sidebar("sidebar-primary"); ?>
+  </div>
 </div>
