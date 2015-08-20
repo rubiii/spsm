@@ -30,28 +30,31 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<div id="wrapper">
-		<div id="header">
-			<img src="<?php bloginfo('template_url'); ?>/images/logo.png" id="logo" alt="<?php bloginfo( 'name' ); ?>">
+	<div id="container">
+    <div id="header-container">
+      <div id="header">
+        <img src="<?php bloginfo('template_url'); ?>/images/logo.png" id="logo" alt="<?php bloginfo( 'name' ); ?>">
 
-			<?php
-				$nav_options = array(
-					"container"    => "nav",
-					"container_id" => "nav"
-				);
+        <?php
+          $nav_options = array(
+            "container"    => "nav",
+            "container_id" => "nav"
+          );
 
-				wp_nav_menu($nav_options);
-			?>
+          wp_nav_menu($nav_options);
+        ?>
 
-			<div class="header-social">
-        <a href="https://www.facebook.com/pages/St-Pauli-selber-machen/1402128183433666">
-          <i class="fa fa-2x fa-facebook-square" title="St. Pauli selber machen auf Facebook"></i>
-        </a>
-				&nbsp;
-        <a href="https://twitter.com/StPselbermachen">
-          <i class="fa fa-2x fa-twitter-square" title="St. Pauli selber machen auf Twitter"></i>
-        </a>
-			</div>
-		</div>
+        <div class="header-social">
+          <a href="https://www.facebook.com/pages/St-Pauli-selber-machen/1402128183433666">
+            <i class="fa fa-2x fa-facebook-square" title="St. Pauli selber machen auf Facebook"></i>
+          </a>
+          &nbsp;
+          <a href="https://twitter.com/StPselbermachen">
+            <i class="fa fa-2x fa-twitter-square" title="St. Pauli selber machen auf Twitter"></i>
+          </a>
+        </div>
+      </div>
+    </div>
 
-		<div id="stage">
+    <div id="stage-container">
+      <div id="stage">

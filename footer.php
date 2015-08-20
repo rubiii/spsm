@@ -5,6 +5,7 @@
  */
 ?>
 
+      </div>
 		</div>
 
 		<?php get_sidebar(); ?>
