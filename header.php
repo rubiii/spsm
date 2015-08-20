@@ -22,7 +22,7 @@
 
 	<link rel="icon" type="image/png" href="<?php bloginfo('template_url'); ?>/images/favicon.png" />
 
-	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/build/style.min.css">
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/build/style.min.css">
 
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
@@ -33,7 +33,7 @@
 	<div id="container">
     <div id="header-container">
       <div id="header">
-        <img src="<?php bloginfo('template_url'); ?>/images/logo.png" id="logo" alt="<?php bloginfo( 'name' ); ?>">
+        <img src="<?php bloginfo('template_url'); ?>/assets/images/logo.png" id="logo" alt="<?php bloginfo( 'name' ); ?>">
 
         <?php
           $nav_options = array(
