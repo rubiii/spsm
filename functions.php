@@ -6,7 +6,6 @@
 
 // Theme Setup (based on twentythirteen: http://make.wordpress.org/core/tag/twentythirteen/)
 function spsm_setup() {
-	load_theme_textdomain( 'spsm', get_template_directory() . '/languages' );
 	add_theme_support( 'automatic-feed-links' );
 	add_theme_support( 'structured-post-formats', array( 'link', 'video' ) );
 	add_theme_support( 'post-formats', array( 'aside', 'audio', 'chat', 'gallery', 'image', 'quote', 'status' ) );
