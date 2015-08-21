@@ -30,7 +30,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<div id="container">
+  <div id="container">
     <div id="header-container">
       <div id="header">
         <img src="<?php bloginfo('template_url'); ?>/assets/images/logo.png" id="logo" alt="<?php bloginfo( 'name' ); ?>">
