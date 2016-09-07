@@ -37,7 +37,7 @@
     <div id="header-container">
       <div id="header">
         <div class="clearfix">
-          <img src="<?php bloginfo('template_url'); ?>/assets/images/logo.png" id="logo" alt="<?php bloginfo( 'name' ); ?>">
+          <img src="<?php bloginfo('template_url'); ?>/public/images/logo.png" id="logo" alt="<?php bloginfo( 'name' ); ?>">
 
           <?php
             $nav_options = array(
