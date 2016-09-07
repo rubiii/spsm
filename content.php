@@ -32,7 +32,7 @@
 		<?php the_excerpt(); ?>
 
 		<div class="entry-link">
-			<a href="<?php echo esc_url( get_permalink() ); ?>">Zum Artikel</a>
+			<a href="<?php echo esc_url( get_permalink() ); ?>">Weiterlesen &hellip;</a>
 		</div>
 	</div>
 </article>

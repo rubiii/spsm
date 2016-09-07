@@ -1,0 +1,21 @@
+{
+  "name": "spsm-theme",
+  "description": "Theme for St. Pauli selber machen",
+  "main": "",
+  "authors": [
+    "rubiii <me@rubiii.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test"
+  ],
+  "devDependencies": {
+    "jquery": "~2.2.3",
+    "font-awesome": "~4.6.3"
+  }
+}

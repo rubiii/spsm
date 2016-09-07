@@ -7,15 +7,20 @@ Author URI: http://st-pauli-selber-machen.de
 Version: 1.0
 */
 
+$fa-font-path: "../../public/fonts";
+@import "bower_components/font-awesome/scss/font-awesome.scss";
+
 body {
 	font: 14px/22px "Open Sans", Helmet, Freesans, sans-serif;
   background-color: #e10000;
-  background-image: url(../../images/bg.jpg);
-  background-repeat: no-repeat;
+  background-image: url(../../public/images/bg.jpg);
   background-attachment: fixed;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
 }
 
-body, select, input, textarea { color: #333; }
+body, select, input, textarea { color: #444; }
 
 /* Mozilla dosen't style place holders by default */
 input:-moz-placeholder { color:#a9a9a9; }
@@ -28,7 +33,7 @@ html, body {
 
 #container {
   display: table;
-  max-width: 1400px;
+  max-width: 1500px;
 }
 
 #header-container {
@@ -49,7 +54,7 @@ html, body {
   min-height: 100%;
 
 	background: #fff;
-  padding: 60px;
+  padding: 60px 60px 30px 60px;
 
 	border: 10px solid rgba(255, 255, 255, .3);
 	border-top-width: 0;
@@ -70,105 +75,9 @@ html, body {
 }
 
 
-
-/* Smartphones (portrait and landscape) */
-@media only screen and (min-width: 320px) and (max-width: 767px) {
-  #container {
-    display: block;
-    width: 100%;
-  }
-  #header-container {
-    display: block;
-    width: auto;
-    padding: 30px 0;
-  }
-  #header #logo {
-    display: inline-block;
-    margin: 5px 40px 0 20px;
-    vertical-align: top;
-  }
-  #header #nav {
-    display: inline-block;
-    width: auto;
-    margin: 0;
-    padding: 0;
-    border: 0;
-  }
-  #header #nav .menu li {
-    font-size: 16px;
-    text-align: left;
-    margin-top: 6px;
-  }
-  #header-container #header .header-social {
-    text-align: left;
-    margin: 10px 0 0 195px;
-  }
-  #header-container #header .header-social .fa {
-    font-size: 1.5em;
-  }
-  #stage-container {
-    display: block;
-    border-width: 10px 0;
-    margin: 0;
-    width: auto;
-    min-width: initial;
-  }
-  #stage-container #stage {
-    -ms-word-break: break-all;
-
-     word-break: break-all;
-     word-break: break-word; /* Webkit */
-
-     -webkit-hyphens: auto;
-     -moz-hyphens: auto;
-     hyphens: auto;
-  }
-  #sidebar-container {
-    display: block;
-    padding: 20px 0 30px;
-  }
-  #sidebar-container #sidebar-wrapper {
-    width: auto;
-  }
-  #sidebar-container #sidebar .widget {
-    border-left-width: 0;
-    border-right-width: 0;
-  }
-}
-
-/* Tablets (portrait and landscape) */
-@media only screen and (min-width: 768px) and (max-width: 1130px) {
-  #container {
-    display: block;
-    position: relative;
-  }
-  #header-container {
-    display: block;
-    position: absolute;
-  }
-  #stage-container {
-    display: block;
-    margin: 0 30px 30px 280px;
-    border-bottom-width: 10px;
-    width: auto;
-  }
-  #sidebar-container {
-    display: block;
-    margin: 0 30px 30px 280px;
-    padding: 0;
-  }
-  #sidebar-container #sidebar-wrapper {
-    width: auto;
-  }
-}
-
-
-
-
-
-
 #header .header-social {
-	text-align: center;
+	text-align: right;
+  margin: 20px 10px 0 0;
 }
 
 #header .header-social a {
@@ -176,80 +85,107 @@ html, body {
   text-decoration: none;
 }
 #header .header-social a:hover {
-	color: #fff;
+	color: #0CD4BC;
 }
 
 #logo {
 	display: block;
-	margin: 0 auto;
+  margin: 0 auto;
+  padding-left: 60px;
 }
 
-#nav {
-	width: 220px;
-	margin: 65px auto 30px auto;
-	padding: 30px 10px;
-	border: 1px solid #fff;
-	border-left: 0;
-	border-right: 0;
+#nav, #overlay-nav {
+  margin: 40px 10px 0 0;
 }
-#nav .menu {
+#nav .menu, #overlay-nav .menu {
 	list-style: none;
 }
-#nav .menu li {
+#nav .menu li, #overlay-nav .menu li {
 	font-family: 'Open Sans Condensed', sans-serif;
-	font-size: 18px;
+	font-size: 20px;
 	font-weight: 700;
 	text-transform: uppercase;
-	letter-spacing: .03em;
-	text-align: center;
+	letter-spacing: .01em;
+	text-align: right;
 	margin-top: 12px;
 }
-#nav .menu li:first-child {
+#nav .menu li:first-child, #overlay-nav .menu li:first-child {
 	margin-top: 0;
 }
-#nav .menu li a {
-	color: #fff;
+#nav .menu li a, #overlay-nav .menu li a {
+	color: #e20000;
+  background: #fff;
+  padding: 0 6px;
 	text-decoration: none;
 }
-#nav .menu li a:hover {
-	text-decoration: underline;
+#nav .menu li a:hover, #overlay-nav .menu li a:hover,
+#nav .menu li.current-menu-item a, #overlay-nav .menu li.current-menu-item a {
+  text-decoration: none;
+  background: #0CD4BC;
+  color: #fff;
 }
-#nav .sub-menu {
+#nav .sub-menu, #overlay-nav .sub-menu {
 	display: none;
+}
+
+#overlay-nav {
+  float: left;
+  margin: 50px 30px 30px 40px;
+}
+#overlay-nav .menu li {
+	text-align: left;
+}
+#overlay-nav .menu li {
+  font-size: 3.5em;
+  line-height: 1.3em;
 }
 
 #stage b {
 	font-weight: bold;
 }
 #stage a {
-	color: #ef8800;
+  color: #0cd4bc;
 }
 #stage a:hover {
 	text-decoration: none;
 }
 
 #stage h1 {
+  color: #ed0000;
 	font-family: "Open Sans", sans-serif;
 	font-size: 26px;
+	font-weight: 700;
 	line-height: 30px;
+  letter-spacing: -0.04rem;
 	text-transform: uppercase;
 	padding-bottom: 5px;
 }
 
 #stage h2 {
+  color: #ed0000;
 	font-family: "Open Sans", sans-serif;
 	font-size: 26px;
+	font-weight: 700;
 	line-height: 30px;
+  letter-spacing: -0.04rem;
 	text-transform: uppercase;
 	padding-bottom: 5px;
 }
 #stage h2 a {
-	color: #333;
+	color: #ed0000;
 	text-decoration: none;
 }
 #stage h2 a:hover {
-	color: #ef8800;
+	color: #0CD4BC;
 	text-decoration: none;
+}
+
+#commentform #submit {
+  background: #0CD4BC;
+  border: 0;
+}
+#commentform #submit:hover {
+  text-decoration: underline;
 }
 
 #stage h3 {
@@ -265,16 +201,16 @@ html, body {
 #stage article {
 	margin-bottom: 60px;
 }
-#stage article header {
+#stage header {
 	border-bottom: 1px solid #ccc;
 	padding-bottom: 25px;
 	margin-bottom: 25px;
 }
-#stage article header .entry-meta {
+#stage header .entry-meta {
 	font-style: italic;
 }
 
-#stage article .entry-content .entry-link {
+#stage .entry-content .entry-link {
 	font-style: italic;
 }
 
@@ -283,9 +219,18 @@ html, body {
 #stage article ol {
 	margin-bottom: 25px;
 }
+#stage article ol,
+#stage article ul {
+  margin-left: -10px;
+}
+#stage article ol li,
+#stage article ul li {
+  padding-left: 10px;
+}
 #stage article ul {
 	list-style: disc outside none;
 }
+p
 
 #stage article img {
 	border: 10px solid #f9f9f9;
@@ -304,7 +249,7 @@ html, body {
 	font-weight: bold;
 }
 #sidebar a {
-	color: #ef8800;
+	color: #0cd4bc;
 }
 #sidebar a:hover {
 	text-decoration: none;
@@ -315,9 +260,10 @@ html, body {
 	font-size: 15px;
 	font-weight: 700;
 	text-transform: uppercase;
-	padding-bottom: 10px;
-	border-bottom: 1px solid #aaa;
-	margin-bottom: 10px;
+  color: #ed0000;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 15px;
 }
 
 #sidebar .widget {
@@ -349,7 +295,7 @@ input[type="submit"] {
 	width: auto;
 }
 textarea {
-  width: 600px;
+  width: 100%;
   height: 300px;
   padding: 10px 12px;
 }
@@ -365,18 +311,118 @@ nav.pagination {
 }
 
 
-
-/* Make images scale proportionally */
+/* Proportionally scaling images */
 .entry-content img,
 .comment-content img,
 .widget img {
-    max-width: 97.5%; /* Fluid images for posts, comments, and widgets */
+  max-width: 97.5%;
 }
 img[class*="align"],
 img[class*="wp-image-"] {
-    height: auto; /* Make sure images with WordPress-added height and width >attributes are scaled correctly */
+  height: auto;
 }
 img.size-full {
-    max-width: 97.5%;
-    width: auto; /* Prevent stretching of full-size images with height and >>width attributes in IE8 */
+  max-width: 97.5%;
+  width: auto;
+}
+
+#burger {
+  display: none;
+  color: #fff;
+  position: fixed;
+  left: 5px;
+  top: 32px;
+  padding: 10px 15px;
+  z-index: 10;
+}
+#burger:hover {
+  color: #ef8800;
+}
+
+body.overlay-visible {
+  overflow: hidden;
+}
+body.overlay-visible #burger {
+  display: block;
+}
+
+#overlay {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #e10000;
+  background-image: url(../../public/images/bg.jpg);
+  transition: .3s;
+  overflow-y: scroll;
+  z-index: -1;
+  opacity: 0;
+}
+#overlay.visible {
+  z-index: 9;
+  opacity: 1;
+}
+
+#overlay a:hover, #overlay a:focus {
+  color: #f1f1f1;
+}
+
+#overlay-logo {
+  float: left;
+  margin: 20px 0 0 130px;
+}
+
+
+@media only screen and (max-width: 1150px) {
+  #container {
+    padding-left: 70px;
+  }
+  #header-container {
+    display: none;
+  }
+  #stage-container {
+    padding: 42px;
+  }
+  #burger {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  #sidebar-container {
+    display: block;
+    padding: 20px 0 30px;
+  }
+  #sidebar-container #sidebar-wrapper {
+    width: auto;
+  }
+  #sidebar-container #sidebar .widget {
+    margin-left: 0;
+    margin-right: 30px;
+  }
+  #stage-container {
+    display: block;
+    border-width: 10px;
+    margin: 20px 30px 0 0;
+    width: auto;
+    min-width: initial;
+  }
+  #burger {
+    top: 62px;
+  }
+  #overlay-logo {
+    float: none;
+    margin: 35px 0 0 95px;
+  }
+  #overlay-nav {
+    float: none;
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+  #overlay-nav .menu li {
+    font-size: 2em;
+    line-height: 1.2em;
+  }
 }
