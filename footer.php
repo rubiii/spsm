@@ -14,7 +14,7 @@
   </div>
 
   <div id="overlay">
-    <img src="<?php bloginfo('template_url'); ?>/public/images/logo.png" id="overlay-logo" alt="<?php bloginfo( 'name' ); ?>">
+    <img src="<?php bloginfo('template_url'); ?>/public/images/logo.svg" id="overlay-logo" alt="<?php bloginfo( 'name' ); ?>">
 
     <?php
       $nav_options = array(
