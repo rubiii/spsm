@@ -230,7 +230,6 @@ html, body {
 #stage article ul {
 	list-style: disc outside none;
 }
-p
 
 #stage article img {
 	border: 10px solid #f9f9f9;
@@ -425,4 +424,40 @@ body.overlay-visible #burger {
     font-size: 2em;
     line-height: 1.2em;
   }
+}
+
+.combo {
+  margin: 40px 0 -25px;
+}
+.combo:before, .combo:after {
+  content: "";
+  display: table;
+}
+.combo:after {
+  clear: both;
+}
+.combo .combo-img {
+  float: left;
+  margin-right: 25px;
+}
+.combo .combo-title {
+  font-weight: bold;
+  margin-top: 10px;
+}
+.combo .combo-info {
+  font-style: italic;
+}
+.combo .combo-text {
+  margin-top: 20px;
+}
+
+.widget ul,
+.widget ol {
+  list-style: initial;
+}
+.widget ul li,
+.widget ol li {
+  list-style-position: inside;
+  text-indent: -1em;
+  padding-left: 1em;
 }
