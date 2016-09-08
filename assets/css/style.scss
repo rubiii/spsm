@@ -386,36 +386,66 @@ body.overlay-visible #burger {
   #stage-container {
     padding: 42px;
   }
+  #stage article ol li,
+  #stage article ul li {
+    list-style-position: inside;
+    text-indent: -1em;
+    padding-left: 1em;
+    margin-left: 12px;
+  }
   #burger {
     display: block;
   }
 }
 
 @media only screen and (max-width: 950px) {
+  body, #overlay {
+    background-size: cover;
+  }
+  #container {
+    padding-left: 5px;
+  }
   #sidebar-container {
     display: block;
-    padding: 20px 0 30px;
+    padding: 10px 0 5px;
   }
   #sidebar-container #sidebar-wrapper {
     width: auto;
   }
   #sidebar-container #sidebar .widget {
     margin-left: 0;
-    margin-right: 30px;
+    margin-right: 5px;
   }
   #stage-container {
     display: block;
     border-width: 10px;
-    margin: 20px 30px 0 0;
+    margin: 5px 5px 0 0;
+    padding: 30px 60px 30px 20px;
     width: auto;
     min-width: initial;
   }
+  #stage h1,
+  #stage h2 {
+    font-size: 22px;
+    line-height: 26px;
+  }
   #burger {
-    top: 62px;
+    color: #ed0000;
+    top: 34px;
+    left: auto;
+    right: 15px;
+  }
+  .overlay-visible #burger {
+    color: #fff;
+  }
+  #burger:hover,
+  .overlay-visible #burger:hover {
+    color: #0CD4BC;
   }
   #overlay-logo {
     float: none;
-    margin: 5px 0 0 60px;
+    margin: 20px 0 0 0;
+    width: 160px;
   }
   #overlay-nav {
     float: none;
