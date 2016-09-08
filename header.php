@@ -50,7 +50,7 @@
         </div>
 
         <div class="header-social">
-          <a href="https://www.facebook.com/pages/St-Pauli-selber-machen/1402128183433666">
+          <a href="https://www.facebook.com/stpselbermachen">
             <i class="fa fa-2x fa-facebook-square" title="St. Pauli selber machen auf Facebook"></i>
           </a>
           &nbsp;
