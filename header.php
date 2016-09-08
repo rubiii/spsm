@@ -13,11 +13,11 @@
 		}
 	?>
 
-	<title><?php wp_title( '|', true, 'right' ); ?></title>
+	<title><?php wp_title( '|', true, 'right' ); ?><?php bloginfo('name'); ?></title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<meta name="title" content="<?php wp_title( '|', true, 'right' ); ?>">
+	<meta name="title" content="<?php wp_title( '|', true, 'right' ); ?><?php bloginfo('name'); ?>">
 	<meta name="description" content="<?php bloginfo('description'); ?>">
 
 	<link rel="icon" type="image/png" href="<?php bloginfo('template_url'); ?>/images/favicon.png" />
