@@ -11,7 +11,7 @@
 
 	if ( have_comments() ) : ?>
 
-	<h2 id="comments"><?php comments_number(__('No Responses','spsm'), __('One Response','spsm'), __('% Responses','spsm') );?></h2>
+	<h2 id="comments"><?php comments_number(__('Keine Kommentare','spsm'), __('1 Kommentar','spsm'), __('% Kommentare','spsm') );?></h2>
 
 	<div class="navigation">
 		<div class="next-posts"><?php previous_comments_link() ?></div>
@@ -57,7 +57,7 @@
 
 		<?php if ( is_user_logged_in() ) : ?>
 
-			<p><?php _e('Angemeldet als','spsm'); ?> <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>.</p>
+			<p><?php _e('Angemeldet als','spsm'); ?> <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a></p>
 
 		<?php else : ?>
 

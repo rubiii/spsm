@@ -180,6 +180,10 @@ html, body {
 	color: #0CD4BC;
 	text-decoration: none;
 }
+// #stage h3,
+// #stage h3 span {
+//   font-weight: bold;
+// }
 
 #commentform #submit {
   background: #0CD4BC;
@@ -187,6 +191,21 @@ html, body {
 }
 #commentform #submit:hover {
   text-decoration: underline;
+}
+
+.commentlist {
+  list-style: none;
+  margin-top: 20px;
+}
+.commentlist .comment {
+  margin-bottom: 40px;
+}
+.comment .comment-author img {
+  display: none;
+}
+.comment .comment-author cite {
+  font-weight: bold;
+  font-style: normal;
 }
 
 #stage h3 {
