@@ -502,13 +502,19 @@ body.overlay-visible #burger {
   margin-top: 20px;
 }
 
-.widget ul,
-.widget ol {
-  list-style: initial;
+.widget ul {
+  list-style-position: outside;
+  list-style-type: disc;
+  margin-left: 1.3em;
 }
-.widget ul li,
-.widget ol li {
-  list-style-position: inside;
-  text-indent: -1em;
-  padding-left: 1em;
+.widget ol {
+  list-style-position: outside;
+  list-style-type: decimal;
+  margin-left: 1.3em;
+}
+.widget li {
+  margin-bottom: .5em;
+}
+.widget li:last-child {
+  margin-bottom: 0;
 }
